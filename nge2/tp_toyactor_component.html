@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>Component</h1>
+		<p><b>Library:</b> ToyActor<br>
+		<b>Include:&nbsp</b>&nbspComponent.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+		
+		<div class="bordered-box">
+		<b>component_cast(T, V)</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp macro<br>
+		<b>Returns:</b>&nbsp <mark>dynamic_cast(T*)(V)</mark><br><br>
+		Cast raw component.<br>
+		</div>
+
+		<div class="bordered-box">
+		<b>defaultproperties(I)</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp macro<br>
+		<b>Returns:</b>&nbsp <mark>I::I()</mark><br><br>
+		Comfort macro for property creation.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>defaultinit(I)</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp macro<br>
+		<b>Returns:</b>&nbsp <mark>I();<br>bool Initialize();<br>void Update();<br>void Render();<br>void Unload();</mark><br><br>
+		Comfort macro for component creation.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>eCmpProperty</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp struct</p>
+		</div>
+		<div class="bordered-box1">
+		<p><mark>eProperty</mark> mProperty<br><mark>eString</mark> mAssetType</p>
+		</div>
+		
+		<br><h3><mark>class</mark> eComponent <mark>expands</mark> eObject</h3>
+		
+		<div class="bordered-box">
+		<b>Initialize</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp virtual function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Initialize code for component.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Update</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp virtual function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Update code for component.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Render</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp virtual function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Render code for component.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Unload</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp virtual function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Unload code for component.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SuperInit</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Must be called before all inside <em>Initialize</em>.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SuperUnload</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Must be called last inside <em>Unload</em>.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetNickName</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> nickName</a><br>
+		<br>
+		Set components nickname.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetNickName</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eString</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns components nickname.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>UseUpdate</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>bool</mark> vl</a><br>
+		<br>
+		If set to false this component won't use <em>Update</em>.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>UseRender</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>bool</mark> vl</a><br>
+		<br>
+		If set to false this component won't use <em>Render</em>.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CanUpdate</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns true if <em>UseUpdate</em> was set to true.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CanRender</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns true if <em>UseRender</em> was set to true.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetParent</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eActor*</mark> parent</a><br>
+		<br>
+		Set this components Actor attachment.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetParent</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eActor*</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns attached parent Actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetGame</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>void*</mark> game</a><br>
+		<br>
+		Set the game <em>Task</em> for <em>eComponent</em>.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetGame</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void*</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns game <em>Task</em>.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>InitProperty</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp template function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		&nbsp - <a><mark>const T&</mark> value</a><br>
+		&nbsp - <a><mark>ePropertyType</mark> type</a><br>
+		&nbsp - <a><mark>eString</mark> assetType = "default"</a><br>
+		<br>
+		Push a new property onto component.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetProperty</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp template function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>T</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		Returns property.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetProperty</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp template function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		&nbsp - <a><mark>const T&</mark> value</a><br>
+		<br>
+		Set property after creation.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetProperties</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::vector(eCmpProperty)*</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns all properties.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetPropertyBase</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eCmpProperty*</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		Returns property base.<br>
+		</div>
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>Console</h1>
+		<p><b>Library:</b> Core<br>
+		<b>Include:&nbsp</b>&nbspConsole.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+		<h3><mark>class</mark> eConsole</h3>
+		
+		<div class="bordered-box">
+		<b>Print</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> msg</a><br>
+		<br>
+		Print a string to console.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>PrintLine</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> msg</a><br>
+		<br>
+		Print a string in a new line to console.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>PrintLog</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> head</a><br>
+		&nbsp - <a><mark>eString</mark> msg</a><br>
+		<br>
+		Print a log to console. Format: <em>[head]: [msg]</em><br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Clear</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Clears the console.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Get</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eString</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns the console log as string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>WriteToDisk</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Writes the console log to a file inside the working directory named <em>CRASH.log</em>.<br>
+		</div>
+		
+		
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

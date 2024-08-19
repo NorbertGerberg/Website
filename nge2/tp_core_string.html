@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>String</h1>
+		<p><b>Library:</b> Core<br>
+		<b>Include:&nbsp</b>&nbspString.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+		<h3><mark>class</mark> eString</h3>
+		
+		<div class="bordered-box">
+		<b>eString</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp constructor<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>-</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Default string constructor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>eString</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp constructor<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>-</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const eString&</mark> vl</a><br>
+		<br>
+		Create from existing string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>eString</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp constructor<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>-</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*&</mark> vl</a><br>
+		<br>
+		Create from c string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>eString</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp constructor<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>-</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> vl</a><br>
+		<br>
+		Create from c++ string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Set</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> vl</a><br>
+		<br>
+		Set string same as argument.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Set</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> vl</a><br>
+		<br>
+		Set string same as argument.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Add</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> vl</a><br>
+		<br>
+		Add argument to string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Add</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> vl</a><br>
+		<br>
+		Add argument to string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>AddLine</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> vl</a><br>
+		<br>
+		Add argument as new line to string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>AddLine</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> vl</a><br>
+		<br>
+		Add argument as new line to string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Clear</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Clear string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Get</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>const char*</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns string as c string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetStrg</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>const strg& () const</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns string as std string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Compare</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> s1</a><br>
+		<br>
+		Compares itself to argument.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Contains</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> s0</a><br>
+		<br>
+		Returns true if argument was found inside string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Size</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>uint64</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns the string size.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Lenght</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>uint64</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns the string lenght.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>IsEmpty</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>const bool& () const</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns true if string is empty.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Replace</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>char</mark> th</a><br>
+		&nbsp - <a><mark>char</mark> withMe</a><br>
+		<br>
+		Replaces character in entire string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ToString</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static template function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eString</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark><em>T</em></mark> vl</a><br>
+		<br>
+		Convert number type to string.<br>
+		</div>
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

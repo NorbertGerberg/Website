@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>Actor</h1>
+		<p><b>Library:</b> ToyActor<br>
+		<b>Include:&nbsp</b>&nbspActor.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+
+		<h3><mark>class</mark> eActor <mark>expands</mark> eObject</h3>
+		
+		<div class="bordered-box">
+		<b>Initialize</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Initialize actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Update</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Update actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Render</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Render code of actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Unload</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Unload actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>PushComponent</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		&nbsp - <a><mark>eString</mark> nickName</a><br>
+		<br>
+		Add component to actor.<br>[<em>name</em>] = class name<br>[<em>nickName</em>] = component nickname inside actor<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>PopComponent</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> nickName</a><br>
+		<br>
+		Remove component from actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetComponents</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::vector(std::unique_ptr(eComponent))*</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns all components.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetComponent</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eComponent*</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> nickName</a><br>
+		<br>
+		Returns component by nickname.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetComponentByClass</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eComponent*</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> className</a><br>
+		<br>
+		Returns first component by class name.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetClass</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		Set class name of actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetClass</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eString</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns actors class name.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SavePrefab</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		Saves actor as prefab on disk.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetDetailLvl</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eQuality</mark> lvl</a><br>
+		<br>
+		Set the actors quality level.<br>If the scenes quality level is lower than the actors quality level the actor will be destroyed on start.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetDetailLvl</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>eQuality</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns the actors quality level.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Destroy</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Request destruction of actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ShouldDestroy</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns true if actor destruction has been requested.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetPersistent</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>bool</mark> vl = true</a><br>
+		<br>
+		If set to true the actor won't be destroyed on scene switch.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>IsPersistent</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns true if actor should not be destroyed on scene switch.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>AddTag</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> tagname</a><br>
+		<br>
+		Add tag to actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>RemoveTag</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> tagname</a><br>
+		<br>
+		Remove tag from actor.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetTags</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::vector(eString)&</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns all tags the actor has.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>HasTag</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> tagname</a><br>
+		<br>
+		Returns true if actor has certain tag.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetUnpausable</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const bool</mark> vl</a><br>
+		<br>
+		If set to true this actor won't be paused.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetUnpausable</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns true if actor should not pause.<br>
+		</div>
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

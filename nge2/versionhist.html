@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE - Version History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>Version History</h1>
+		<p>Here you can look up the different changes in each released version. You can also find this within the source code under <em>UPDATE_HISTORY.txt</em><br>
+		This is also viewable on GitHub.</p><br>
+		
+		
+		<h2>v200 - 19.08.2024</h2><hr>
+		<p>- Revision of Engine<br>
+		- Added Documentation</p><br>
+		
+		<h2>v111 - 03.07.2024</h2><hr>
+		<h3>Added</h3>
+		<p>- Added small comfort macros for components<br>
+		- Added multiple window rendering<br>
+		- Added MultiWindowRendering example<br>
+		- Added <em>SizeChanged()</em> to eWindow<br>
+		- Added Scene Creator Name to eScene<br>
+		- Added <em>SetCreatorName()</em> to eScene<br>
+		- Added <em>GetCreatorName()</em> to eScene</p>
+		<h3>Changed</h3>
+		<p>- Changed <em>eLayer::Update(int width, int height)</em> to <em>eLayer::Update(vec2 size)</em></p><br>
+		
+		<h2>v110 - 25.06.2024</h2><hr>
+		<h3>Added</h3>
+		<p>
+		- Added custom Tags for Actors<br>
+		- Added <em>KeyPressed()</em> for Keyboard<br>
+		- Added <em>ButtonPressed()</em> for Mouse and Gamepad<br>
+		- Added <em>GetGPUInfo()</em> to eGraphics<br>
+		- Added System Info Example<br>
+		- Added <em>NGE_ENGINE_INFO_VERSION</em> for version check<br>
+		- Added Scene Pause function<br>
+		- Added <em>Pause()</em>, <em>Resume()</em> & <em>IsPaused()</em> to eScene<br>
+		- Added <em>SetUnpausable()</em> & <em>GetUnpausable()</em> for Actors<br>
+		- Added <em>DrawInstances()</em> & <em>DrawContainerInstances()</em> to eMesh<br>
+		- Added <em>InitIDB()</em> to eMesh<br>
+		- Added Instancing Example<br>
+		- Added InstancingPreCalc Example<br>
+		- Added <em>Draw2DInstances()</em> & <em>Draw2DAtlasInstances()</em> to eGraphics<br>
+		- Added <em>InitIDB()</em> to eGraphics<br>
+		- Added 2DInstancing Example<br>
+		- Added PostProcessing Example</p>
+		<h3>Changed</h3>
+		<p>
+		- Changed old <em>KeyPressed()</em> to <em>KeyDown()</em><br>
+		- Changed old <em>ButtonPressed()</em> to <em>ButtonDown()</em></p>
+		<h3>Fixed</h3>
+		<p>- Fixed Viewport3D orbit mode</p>
+		<br>
+		
+		<h2>v103 - 02.06.2024</h2><hr>
+		<h3>Added</h3>
+		<p>
+		- Added Alarm system for components<br>
+		- Added Alarm example<br>
+		- Added simple Pong Game example<br>
+		- Added Scene Persistent Tag for Actors</p><br>
+	
+		<h2>v102 - 01.05.2024</h2><hr>
+		<h3>Added</h3>
+		<p>- Added text rendering<br>
+		- Added OBB collision
+		</p><br>
+		
+		<h2>v101 - 28.04.2024</h2><hr>
+		<h3>Added</h3>
+		<p>- Added Gamepad example<br>
+		- Added Atlas rendering example<br>
+		- Added fixed timestep code
+		</p>
+		<h3>Fixed</h3>
+		<p>- Fixed gamepad deadzone bug</p><br>
+		
+		<h2>v100 - 25.04.2024</h2><hr>
+		<p>- Release version</p><br>
+		
+	
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

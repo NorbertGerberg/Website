@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>Alarm</h1>
+		<p><b>Library:</b> ToyActor<br>
+		<b>Include:&nbsp</b>&nbspAlarm.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+		
+		<div class="bordered-box">
+		<b>ALARM_BIND(fnc)</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp macro<br>
+		<b>Returns:</b>&nbsp <mark>std::bind(&fnc, this)</mark><br><br>
+		Bind function to alarm.<br>
+		</div>
+
+		<div class="bordered-box">
+		<b>eAlarmModule</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp struct</p>
+		</div>
+		<div class="bordered-box1">
+		<p><mark>std::function(void())</mark> mFnc<br><mark>int32</mark> mCnt = 0</p>
+		</div>
+
+		<br><h3><mark>class</mark> eAlarm</h3>
+		
+		<div class="bordered-box">
+		<b>Push</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		&nbsp - <a><mark>std::function(void())</mark> fnc</a><br>
+		<br>
+		Push alarm with function.<br>Use <em>ALARM_BIND</em> here.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Update</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Update code for all active alarms.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Set</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		&nbsp - <a><mark>int32</mark> frames</a><br>
+		<br>
+		Set alarm counter in frames. Set to <em>-1</em> if inactive.<br>
+		</div>
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

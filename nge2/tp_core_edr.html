@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>EDR</h1>
+		<p><b>Library:</b> Core<br>
+		<b>Include:&nbsp</b>&nbspEDR.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+		<h3><mark>namespace</mark> EDR</h3>
+		
+		<div class="bordered-box">
+		<b>GetString</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read string item from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetNumber</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>real6</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read number item from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetInt</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>int</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read integer item from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetBool</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read boolean item from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>SetValue</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>const uint</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> value</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Write text to file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ChangeValue</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>const uint</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> value</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Change item from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CreateDirectoryExt</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> dir</a><br>
+		<br>
+		Create file directory on user PC.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>DeleteDirectory</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> dir</a><br>
+		<br>
+		Delete file directory on user PC.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>WriteFile</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> dir</a><br>
+		&nbsp - <a><mark>strg</mark> content</a><br>
+		<br>
+		Write file to directory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>WriteBinary</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> dir</a><br>
+		&nbsp - <a><mark>strg</mark> content</a><br>
+		<br>
+		Write binary file to directory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ReadBinary</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> dir</a><br>
+		<br>
+		Read binary file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ConvertToBinary</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg&</mark> text</a><br>
+		<br>
+		Convert string to binary format.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ConvertToText</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg&</mark> binary</a><br>
+		<br>
+		Convert binary string to text format.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetContext</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> filePath</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Copy file content to string.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>RemoveFile</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> filePath</a><br>
+		<br>
+		Removes file from directory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>FileExists</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> path</a><br>
+		<br>
+		Returns true if file exists.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetFilesInDir</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::vector(strg)</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> dir</a><br>
+		&nbsp - <a><mark>const int</mark> nt</a><br>
+		<br>
+		Returns all existing files in a directory.<br>
+		nt: 0 = full; 1 = name; 2 = extension;<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetStringG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read string item in group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetNumberG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>real6</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read number item in group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetIntG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>int</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read integer item in group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetBoolG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read boolean item in group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetStringGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read string item in group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetNumberGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>real6</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read number item in group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetIntGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>int</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read integer item in group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetBoolGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read boolean item in group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetStringSG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read string item in sub-group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetNumberSG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>real6</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read number item in sub-group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetIntSG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>int</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read integer item in sub-group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetBoolSG</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read boolean item in sub-group from <em>Readable</em> file.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetStringSGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read string item in sub-group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetNumberSGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>real6</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read number item in sub-group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetIntSGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>int</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read integer item in sub-group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetBoolSGI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>strg</mark> groupS</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read boolean item in sub-group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetStringI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> text</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read string item from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetNumberI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>real6</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> text</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read number item from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetIntI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>int</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> text</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read integer item from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetBoolI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> text</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Read boolean item from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ChangeValueI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> text</a><br>
+		&nbsp - <a><mark>strg</mark> token</a><br>
+		&nbsp - <a><mark>strg</mark> value</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Change item from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GroupItemAmount</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>uint</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Returns amount of items inside a group.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GroupItemAmountI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>uint</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Returns amount of items inside a group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GroupItemName</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>uint</mark> place</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Returns name of item-position inside group.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GroupItemNameI</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> file</a><br>
+		&nbsp - <a><mark>strg</mark> group</a><br>
+		&nbsp - <a><mark>uint</mark> place</a><br>
+		&nbsp - <a><mark>const bool</mark> binary = false</a><br>
+		<br>
+		Returns name of item-position inside group from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Archive</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp typedef<br>
+		<b>Returns:</b>&nbsp <mark>zip</mark><br><br>
+		Archive type.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>OpenArchive</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>Archive*</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> directory</a><br>
+		<br>
+		Opens zip archive.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CreateArchive</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>Archive*</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>const char*</mark> directory</a><br>
+		<br>
+		Creates zip archive.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetArchiveFileContents</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>ZSTAT</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>Archive*</mark> z</a><br>
+		&nbsp - <a><mark>const char*</mark> name</a><br>
+		<br>
+		Get entire archive content.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CopyArchiveFileContents</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>Archive*</mark> z</a><br>
+		&nbsp - <a><mark>const char*</mark> name</a><br>
+		&nbsp - <a><mark>const char*</mark> newPath</a><br>
+		&nbsp - <a><mark>const bool</mark> isBinary = false</a><br>
+		<br>
+		Create copy of archive.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CopyArchiveFileContents</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>strg</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>Archive*</mark> z</a><br>
+		&nbsp - <a><mark>const char*</mark> name</a><br>
+		<br>
+		Move entire archive to memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CloseArchive</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>Archive*</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>Archive*</mark> z</a><br>
+		<br>
+		Closes archive.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>AddFileToArchive</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>Archive*</mark> z</a><br>
+		&nbsp - <a><mark>const char*</mark> filename</a><br>
+		&nbsp - <a><mark>const char*</mark> content</a><br>
+		<br>
+		Adds file to archive.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CopyFileToArchive</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>Archive*</mark> z</a><br>
+		&nbsp - <a><mark>const char*</mark> filename</a><br>
+		&nbsp - <a><mark>const char*</mark> filepath</a><br>
+		<br>
+		Copies file to archive.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>RemoveFileFromArchive</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>Archive*</mark> z</a><br>
+		&nbsp - <a><mark>const char*</mark> filename</a><br>
+		<br>
+		Removes file from archive.<br>
+		</div>
+
+		<div class="bordered-box">
+		<b>ZSTAT</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp struct</p>
+		</div>
+		<div class="bordered-box1">
+		<p><mark>ZSTAT(char* _c, uint64 _size)</mark><br><mark>char*</mark> c<br><mark>uint64</mark> size</p>
+		</div>
+		
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

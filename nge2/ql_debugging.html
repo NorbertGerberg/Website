@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE - Debugging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>Debugging</h1>
+		<p>Some information to help you debug your application.</p><br>
+		
+		
+		<h2>Debug.hpp</h2><hr>
+		<p><em>Debug.hpp</em> inside of <em>Core</em> includes macros for breaking and asserting your program with <em>NGE_ASSERT(vl)</em> and <em>NGE_DEBUGBREAK</em>.</p><br>
+		
+		<h2>VersionInfo.hpp</h2><hr>
+		<p><em>VersionInfo.hpp</em> inside of <em>Core</em> includes a macro that returns the current engine version as an uint16 <em>NGE_ENGINE_INFO_VERSION</em>.<br>
+		You are also able to get the compiler name and version with the macros defined in this header. This is very important for the <em>World</em> library as it relies on the compiler specific typeid names.<br>
+		So a game world file created using the MSVC compiler can not be opened with the GCC compiler.</p><br>
+		
+		<h2>Memory Leaks</h2><hr>
+		<p>At no point does the engine cause intentional memory leaks. The engine auto-checks for any leaks when using <em>eEntry</em>.<br>
+		I can also recommend <em>Dr. Memory</em> to check for any potential leaks inside your program.</p><br>
+		<img src="img11.png"></img><br><br>
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

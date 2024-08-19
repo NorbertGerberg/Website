@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>Content</h1>
+		<p><b>Library:</b> ToyPck<br>
+		<b>Include:&nbsp</b>&nbspContent.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+		<h3><mark>class</mark> eContent</h3>
+		
+		<div class="bordered-box">
+		<b>LoadPck</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> path</a><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		Load a single package into memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>Load</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>std::vector(std::pair(eString, eString))&</mark> packages</a><br>
+		<br>
+		Load multiple packages into memory at once. Format: <em>[first] path [second] name</em><br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>LoadST</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>std::vector(std::pair(eString, eString))&</mark> packages</a><br>
+		<br>
+		Load multiple packages into memory on a single thread. Format: <em>[first] path [second] name</em><br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ReleaseAll</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Release all packages from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ReleasePck</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		Release a package from memory.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetSize</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>uint64</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns the amount of packages loaded in.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetPckNames</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::vector(eString)</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns all loaded package names.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetPackages</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::vector(std::pair(eString, ePackage*))*</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns all loaded packages.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetPackage</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>ePackage*</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		Returns specific package.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CreatePackage</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>eString</mark> path</a><br>
+		&nbsp - <a><mark>eString</mark> name</a><br>
+		<br>
+		fileName = <em>path</em> + <em>name</em> + ".pck"<br>
+		</div>
+		
+		
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>

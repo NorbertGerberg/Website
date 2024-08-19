@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGE2 Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box">
+		<a href="index.html"><img class="content-image" id="nge2_box" src="banner.png" alt="nge2_box"></a>
+        <nav>
+			<ul>
+				| <a href="../index.html">Home</a> |
+				<a href="index.html">Main</a> |
+				<a href="legal.html">Business & Legal</a> |
+			</ul>
+		</nav>
+
+		<h1><br>ComponentFactory</h1>
+		<p><b>Library:</b> ToyActor<br>
+		<b>Include:&nbsp</b>&nbspComponentFactory.hpp</p><br>
+		
+		<h2>Content</h2><hr>
+		
+		<h3><mark>class</mark> eComponentFactory</h3>
+		
+		<div class="bordered-box">
+		<b>RegisterType</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static template function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>void</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> name</a><br>
+		<br>
+		Register component class.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>CreateObject</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::unique_ptr(eComponent)</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> name</a><br>
+		<br>
+		Create component object.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>ClassExists</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>bool</mark><br>
+		<b>Arguments:</b><br>
+		&nbsp - <a><mark>strg</mark> name</a><br>
+		<br>
+		Returns true if class has been registered.<br>
+		</div>
+		
+		<div class="bordered-box">
+		<b>GetMap</b>
+		</div>
+		<div class="bordered-box1">
+		<b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp static function<br>
+		<b>Returns:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <mark>std::unordered_map(strg, std::function(std::unique_ptr(eComponent)()))&</mark><br>
+		<b>Arguments:</b>&nbsp&nbsp -<br><br>
+		Returns all registered component classes.<br>
+		</div>
+		
+		
+		
+		<footer>
+			<p>Copyright © 2024 Norbert Gerberg</p>
+		</footer>
+	</div>
+</body>
+</html>
