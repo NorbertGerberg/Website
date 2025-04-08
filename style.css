@@ -94,7 +94,7 @@ footer {
   margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (width: 600px) {
   #newlogo {
     width: 50%;
   }
