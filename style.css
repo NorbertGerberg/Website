@@ -96,6 +96,6 @@ footer {
 
 @media (max-width: 600px) {
   #newlogo {
-    max-width: 75%;
+    width: 50%;
   }
 }
