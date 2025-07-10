@@ -18,6 +18,30 @@ header {
 	padding: 10px;
 }
 
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-link {
+  padding: 0;
+  width: auto;
+  display: inline-block;
+  line-height: 0;
+  background-color: transparent;
+  margin: 8px;
+}
+
+.image-link:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease;
+}
+
+.image-link img {
+  display: block;
+}
+
 #logo {
 	width: 302px;
 	height: 187px;
@@ -74,6 +98,30 @@ a {
   background-color: #fff;
   border-radius: 10px;
   font-weight: bold;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  margin: 40px auto;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: -10px;   /* Extend underline to the left */
+  right: -10px;  /* Extend underline to the right */
+  bottom: -5px;  /* Slightly below the text */
+  height: 3px;   /* Thickness of underline */
+  background-color: black;
+}
+
+/* Center the h1 using a wrapper */
+.center-wrapper {
+  text-align: center;
 }
 
 .center-link p {
